@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List </title>
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/256/9956/9956310.png?ga=GA1.1.435240953.1699339320&semt=ais">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Honk&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainBody">
+  <div class="game">
+    <div class="main">
+    <h1>  </h1>
+    <h1 style="text-align: center;">My To-Do List</h1>
+
+    <div class="input-container">
+        <input type="text" id="taskInput" required="">
+        <label for="input" class="label">Enter Your  Task 📝</label>
+        <div class="underline"></div>
+      </div>
+    <!-- <input type="number" id="Guess"  size="30"> <br> -->
+    <button class="btn-53" onclick="addTask()">
+        <div class="original">Add Task</div>
+        <div class="letters">
+          
+          <span>A</span>
+          <span>D</span>
+          <span>D</span>
+          <span>_</span>
+          <span>T</span>
+          <span>A</span>
+          <span>S</span>
+          <span>K</span>
+          <!-- <span>N</span> -->
+        </div>
+      </button>
+    <!-- <button   class="btn">Click me </button> -->
+    <ul id="taskList"></ul>
+</div>
+</div>
+</div>
+    <script>
+const taskInput = document.getElementById('taskInput');
+        const taskList = document.getElementById('taskList');
+
+        function addTask() {
+            const newTask = taskInput.value.trim();
+
+            // Check if the input is not empty
+            if (newTask !== '') {
+                // Create a new li element
+                const listItem = document.createElement('li');
+
+                // Set the textContent of the li element to the task text
+                listItem.textContent = newTask;
+
+                // Create a delete Button
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = function () {
+                    taskList.removeChild(listItem);
+                };
+                listItem.appendChild(deleteButton);
+
+                // Append the li element to the ul
+                taskList.appendChild(listItem);
+
+                // Clear the input field after adding the task
+                taskInput.value = '';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

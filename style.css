@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    /* height: 1000px; */
+    background-color: rgb(0, 0, 0);
+}
+.mainBody{
+    background: url('person-playing-3d-video-games-device.jpg');
+
+    /* background: linear-gradient(to right, #870000, #190a05); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.game{
+    /* margin-top: 80px; */
+}
+.main{
+    background: url('img1.png');
+
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto !important;
+    color: white;
+    display: block;
+    /* width: 400px; */
+    height: 80vh;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    /* margin-top:70px ; */
+                /* padding:50px; */
+                padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.171);
+    /* mix-blend-mode: color-burn; */
+}
+h1{
+    font-family: "Anta", sans-serif;
+padding-bottom: 20px;
+background: linear-gradient(to right, #c9ffbf, #ffafbd);
+/* margin-left:-100px; */
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+/* backdrop-filter: blur(1px); */
+}
+
+h2{
+    font-family: system-ui, sans-serif;
+    padding-bottom: 20px;
+    background: linear-gradient(to right, #aaffa9, #11ffbd); 
+    /* margin-left:-100px; */
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#taskList li{
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.064);
+    border-radius: 20px;
+    text-align: start;
+    margin: 10px 30px;
+    /* margin-top: 10px; */
+    list-style-type: numeric;
+    padding: 10px;
+    /* font-weight: bold; */
+    font-size: 18px;
+    font-family: "Anta", sans-serif;
+    box-shadow: rgba(36, 36, 81, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(3, 35, 68, 0.35) 0px -2px 6px 0px inset;
+    transition: all .2s linear;
+}
+#taskList li:hover{
+    box-shadow: rgba(38, 57, 77, 0.499) 0px 20px 30px -10px;
+}
+
+#taskList button{
+   /* text-align: right !important; */
+   color: rgb(248, 248, 248);
+   float: right;
+   background-color: red;
+   padding: 3px  10px;
+   border-radius: 10px;
+   border: none;
+   font-family: "Anta", sans-serif;
+
+
+}
+#taskList button:hover{
+   /* text-align: right !important; */
+   color: rgb(226, 5, 5);
+   float: right;
+   background-color: rgb(255, 255, 255);
+   padding: 3px  10px;
+   border-radius: 10px;
+   border: none;
+
+}
+
+@media only screen and (min-width:500px) {
+    .main{
+       
+        margin: auto !important;
+        color: white;
+        display: block;
+        width: 400px;
+        /* height: 85vh; */
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        margin-top:20px ;
+                    /* padding:50px; */
+                    padding-bottom: 80px;
+        background-color: rgba(0, 0, 0, 0.171);
+        /* mix-blend-mode: color-burn; */
+    }
+}
+
+
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+border: 0 solid;
+box-sizing: border-box;
+}
+
+.btn-53 {
+-webkit-tap-highlight-color: transparent;
+-webkit-appearance: button;
+background-color: #000;
+background-image: none;
+color: #fff;
+cursor: pointer;
+font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+font-size: 100%;
+line-height: 1.5;
+margin: 0;
+-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+padding: 0;
+}
+
+.btn-53:disabled {
+cursor: default;
+}
+
+.btn-53:-moz-focusring {
+outline: auto;
+}
+
+.btn-53 svg {
+display: block;
+vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+display: none;
+}
+
+.btn-53 {
+/* margin-top: 10px; */
+border: 1px solid;
+border-radius: 999px;
+box-sizing: border-box;
+/* display: flex; */
+font-weight: 900;
+overflow: hidden;
+padding: 10PX 3rem;
+position: relative;
+text-transform: uppercase;
+}
+
+.btn-53 .original {
+background: #fff;
+color: #000;
+display: grid;
+inset: 0;
+place-content: center;
+position: absolute;
+transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+transform: translateY(100%);
+}
+
+.btn-53 .letters {
+display: inline-flex;
+}
+
+.btn-53 span {
+opacity: 0;
+transform: translateY(-15px);
+transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+transform: translateY(15px);
+}
+
+.btn-53:hover span {
+opacity: 1;
+transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+transition-delay: 0.5s;
+}
+
+/* input  */
+
+.input-container {
+position: relative;
+margin: 20px auto;
+width: 200px;
+}
+
+.input-container input[type="text"] {
+font-size: 16px;
+width: 100%;
+border: none;
+border-bottom: 2px solid #f2f0f0;
+padding: 5px 0;
+background-color: transparent;
+outline: none;
+color: white;
+}
+
+.input-container .label {
+    font-family: "Anta", sans-serif;
+
+position: absolute;
+top: 0;
+left: 0;
+color: #ccc;
+transition: all 0.3s ease;
+pointer-events: none;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+top: -20px;
+font-size: 16px;
+color: #fbfbfb;
+}
+
+.input-container .underline {
+position: absolute;
+bottom: 0;
+left: 0;
+height: 2px;
+width: 100%;
+background-color: #333;
+transform: scaleX(0);
+transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+transform: scaleX(1);
+}
+
+
+#inputPera{
+/* background-color: white; */
+border-radius: 10px;
+padding-top: 25px;
+margin-top: 10px;
+text-align: center;
+}
